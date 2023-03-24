@@ -1,0 +1,14 @@
+@import './variables';
+@import './myframework';
+
+.notification{
+   position: fixed;
+   bottom: 10px;
+   left:10px;
+   width: 300px;
+   height: 50px;
+   background-color: $bg-white;
+   @include border-radius(0.75rem);
+   padding: 10px;
+   font-size: larger;
+}

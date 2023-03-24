@@ -1,0 +1,47 @@
+@import './variables';
+@mixin border-radius($radius){
+    border-radius:$radius ;
+    -webkit-border-radius:$radius ;
+    -moz-border-radius:$radius ;
+    -ms-border-radius:$radius ;
+    -o-border-radius:$radius ;
+}
+.NavBar{
+    position:sticky;
+    top:0;
+    height: 70px;
+    width: auto!important;
+    color: $text-black;
+    background-color: $bg-white;
+}
+
+.search-bar{
+    background-color: $bg-white;
+    width: 100%;
+    height: 40px;
+   @include border-radius(30px);
+    border:1px solid $color-grey;
+    &:hover
+{
+    box-shadow: 1px 1px 8px 1px $color-grey;
+    }
+   
+    input{
+        height: 100%;
+        border: none;
+        @include border-radius(inherits);
+        &:focus-within
+          {
+            outline:none;
+        }
+}
+.search-icon{
+    height: 100%;
+    position: relative;
+    background-color: $bg-white;
+    color: $color-grey;
+    
+ 
+}
+
+}

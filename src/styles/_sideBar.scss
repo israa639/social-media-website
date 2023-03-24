@@ -1,0 +1,55 @@
+@import './variables';
+@import './myframework';
+
+   
+.sideBar-container{
+    background-color: $bg-light-grey;
+    position :sticky;
+    
+@include breakpoints('small')
+{position :fixed;
+    height:5vh;
+    bottom: 0px;
+    width: 100vw !important;
+    display:flex !important;
+    justify-content: space-between!important;
+    .side-item{
+        height:100%;
+   }
+}
+@include breakpoints('medium')
+{
+    top:70px;
+    
+    justify-content: center!important;
+    align-items: start!important;
+    .side-item{
+         height:10vh;
+    }
+}
+@include breakpoints('large')
+{  top:70px;
+    
+    justify-content: center!important;
+    align-items:start!important;
+    .side-item{
+         height:10vh;
+    }
+}
+@include breakpoints('x-large')
+{
+    top:70px;
+    
+    justify-content: center!important;
+    align-items:start!important;
+    .side-item{
+         height:10vh;
+    }
+}
+
+
+}
+
+
+
+

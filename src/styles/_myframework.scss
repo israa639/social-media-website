@@ -1,0 +1,33 @@
+@import './variables';
+@mixin breakpoints($size){
+    @if $size=='small'{
+        @media (min-width:$sm-screen) and (max-width:($md-screen )) {
+              @content
+        }
+    }
+    @else if $size=='medium'{
+        @media (min-width:($md-screen + 1px )) and (max-width:($lg-screen ) ) {
+              @content
+        }
+    }
+    @else if $size=='large' {
+        @media (min-width:($lg-screen + 1px)) and (max-width:($xl-screen )) {
+              @content
+        }
+    }
+    @else if $size=='x-large' {
+        @media (min-width:($xl-screen + 1px))  {
+              @content
+        }
+    }
+}
+
+.float-left{
+    float: left !important;
+}
+.float-right{
+    float: right !important;
+}
+.clear-fix{
+    clear: both;
+}

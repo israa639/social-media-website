@@ -1,3 +1,15 @@
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.clear-fix {
+  clear: both;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,15 +18,17 @@
 
 .App {
   min-width: 100vw;
-  min-height: 100vh;
-  background-color: #180f35;
+  max-height: auto;
+  background-color: #d5d9d9;
 }
 
-.Header {
-  position: fixed;
-  height: auto;
-  width: 100vw;
-  color: #fff;
+.NavBar {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: auto !important;
+  color: #000;
+  background-color: #fff;
 }
 
 .search-bar {
@@ -34,11 +48,11 @@
 .search-bar input {
   height: 100%;
   border: none;
-  border-radius: inherit;
-  -webkit-border-radius: inherit;
-  -moz-border-radius: inherit;
-  -ms-border-radius: inherit;
-  -o-border-radius: inherit;
+  border-radius: inherits;
+  -webkit-border-radius: inherits;
+  -moz-border-radius: inherits;
+  -ms-border-radius: inherits;
+  -o-border-radius: inherits;
 }
 .search-bar input:focus-within {
   outline: none;
@@ -50,6 +64,86 @@
   color: #dcdcdc;
 }
 
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.sideBar-container {
+  background-color: #d5d9d9;
+  position: sticky;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .sideBar-container {
+    position: fixed;
+    height: 5vh;
+    bottom: 0px;
+    width: 100vw !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .sideBar-container .side-item {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sideBar-container {
+    top: 70px;
+    justify-content: center !important;
+    align-items: start !important;
+  }
+  .sideBar-container .side-item {
+    height: 10vh;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sideBar-container {
+    top: 70px;
+    justify-content: center !important;
+    align-items: start !important;
+  }
+  .sideBar-container .side-item {
+    height: 10vh;
+  }
+}
+@media (min-width: 1200px) {
+  .sideBar-container {
+    top: 70px;
+    justify-content: center !important;
+    align-items: start !important;
+  }
+  .sideBar-container .side-item {
+    height: 10vh;
+  }
+}
+
+.post {
+  height: 550px !important;
+  position: static !important;
+}
+.post img {
+  height: 60%;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.clear-fix {
+  clear: both;
+}
+
 .profile-image {
   width: 30px;
   height: 50px;
@@ -58,4 +152,46 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.profile .cover-photo {
+  height: 280px !important;
+}
+.profile .profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px white solid;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.notification {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+  padding: 10px;
+  font-size: larger;
 }/*# sourceMappingURL=main.css.map */
